@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     box-sizing: border-box;
 }
+
 body {
     font-family: Goldman, sans-serif;
     margin: 0;
@@ -10,12 +16,19 @@ body {
     background: whitesmoke;
 }
 
-h1 {
+.title {
+    position: fixed;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-size: 77px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .33);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vw;
     letter-spacing: 3px;
+}
+
+a {
+    background-color: black;
 }
 
 /* Loader */
@@ -39,21 +52,6 @@ h1 {
 
 /* Image Container */
 
-.image-container {
-    margin: 10px 15%;
-}
-
 .image-container img {
     width: 100%;
-    margin-top: 5px;
-}
-
-/* Media Query: Large Smartphone */
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 20px;
-    }
-    .image-container {
-        margin: 10px;
-    }
 }
